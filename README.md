@@ -1,4 +1,4 @@
-# Object_Detection_Models
+# Object_Detection
 
 In this project, we developed a custom object detection model using a **ResNet-50 backbone** and compared its performance against pre-trained YOLOv5 variants: **YOLOv5n (nano)**, **YOLOv5s (small)**, **YOLOv5m (medium)**, and **YOLOv5l (large)**. 
 
