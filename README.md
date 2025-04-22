@@ -191,16 +191,16 @@ This below tables shows the evaluation metrics for object detection performance 
 ## Comparison between Yolov5 and Custom Model
 ### Yolov5
 The below Image shows the Average Precision plot for different IoU and different sizes.
-![AP](https://github.com/Samar150602/Yolov5_comparison_with_Custom_Object_Detection_Model/blob/10182c5b04568cee828a43ac6830f02e718b836b/img/AP.png)
+![AP](https://github.com/EhtishamAshraf/Object_Detection_Models/blob/b89d80f34036d1c1e63338c74378359bc362d081/img/AP.png)
 
 The below Image shows the Average Recall plot for IoU and different sizes.
-![AR](https://github.com/Samar150602/Yolov5_comparison_with_Custom_Object_Detection_Model/blob/10182c5b04568cee828a43ac6830f02e718b836b/img/AR.png)
+![AR](https://github.com/EhtishamAshraf/Object_Detection_Models/blob/b89d80f34036d1c1e63338c74378359bc362d081/img/AR.png)
 
 The predicted and actual bouding boxes along with class labels are displayed below for two test images for yolov5s
 1. A person wearing a Tie:
-![yolo_p](https://github.com/Samar150602/Yolov5_comparison_with_Custom_Object_Detection_Model/blob/10182c5b04568cee828a43ac6830f02e718b836b/img/yolo_p.png)
+![yolo_p](https://github.com/EhtishamAshraf/Object_Detection_Models/blob/b89d80f34036d1c1e63338c74378359bc362d081/img/yolo_p.png)
 2. Stop Sign
-![yolo_s](https://github.com/Samar150602/Yolov5_comparison_with_Custom_Object_Detection_Model/blob/10182c5b04568cee828a43ac6830f02e718b836b/img/yolo_s.png)
+![yolo_s](https://github.com/EhtishamAshraf/Object_Detection_Models/blob/b89d80f34036d1c1e63338c74378359bc362d081/img/yolo_s.png)
 
 ### Custom Model
 #### Training and Validation loss:
@@ -208,21 +208,21 @@ The predicted and actual bouding boxes along with class labels are displayed bel
  - Validation loss is the error or difference between the model’s predictions and the actual labels, but on a separate validation dataset that is not seen by the model during training. This dataset is used to evaluate the model's generalization performance.Validation loss is used to check if the model is overfitting or underfitting. Overfitting happens when the model performs very well on the training data but poorly on unseen validation data.
 
 The graph below shows that both Training and validation losses decrease at start but after 3 or 4 epochs, validation loss doesn't decrease which means that our model is having some problem in generalizing for unseen data. As this is a custom model and due to the lack of time and computing resources, learning rate and batch size are not at the moment tuned to best values which can increase the performance of the model.
-![loss_graph](https://github.com/Samar150602/Yolov5_comparison_with_Custom_Object_Detection_Model/blob/10182c5b04568cee828a43ac6830f02e718b836b/img/loss_graph.png)
+![loss_graph](https://github.com/EhtishamAshraf/Object_Detection_Models/blob/b89d80f34036d1c1e63338c74378359bc362d081/img/loss_graph.png)
 
 #### Result on some Test Images
 This image below shows detection of a stop sign, As we can see the detection bounding box is not perfect but still our model has successfully classfied it with some error in the position in the image.
-![stop_sign](https://github.com/Samar150602/Yolov5_comparison_with_Custom_Object_Detection_Model/blob/10182c5b04568cee828a43ac6830f02e718b836b/img/stop_sign.png)
+![stop_sign](https://github.com/EhtishamAshraf/Object_Detection_Models/blob/b89d80f34036d1c1e63338c74378359bc362d081/img/stop_sign.png)
 
 In the following, the model has successfully defined the class i.e person and IoU score is also shown which tells there is a mismatch in the ground truth and our model's position.
 
-![girl](https://github.com/Samar150602/Yolov5_comparison_with_Custom_Object_Detection_Model/blob/10182c5b04568cee828a43ac6830f02e718b836b/img/girl.png)
+![girl](https://github.com/EhtishamAshraf/Object_Detection_Models/blob/b89d80f34036d1c1e63338c74378359bc362d081/img/girl.png)
 
 Below is an image of Zebra, the model detects the zebra and localizes it even though it fails to localize it accurately. 
-![Figure_1](https://github.com/Samar150602/Yolov5_comparison_with_Custom_Object_Detection_Model/blob/10182c5b04568cee828a43ac6830f02e718b836b/img/Figure_1.png)
+![Figure_1](https://github.com/EhtishamAshraf/Object_Detection_Models/blob/b89d80f34036d1c1e63338c74378359bc362d081/img/Figure_1.png)
 
 Here, 3 persons are standing in the image, the model successully predicts that the objects in the image are persons but it fails to localize them with great accuracy. The model gives 4 bounding boxes for 3 persons. 
-![Figure_2](https://github.com/Samar150602/Yolov5_comparison_with_Custom_Object_Detection_Model/blob/10182c5b04568cee828a43ac6830f02e718b836b/img/Figure_2.png)
+![Figure_2](https://github.com/EhtishamAshraf/Object_Detection_Models/blob/b89d80f34036d1c1e63338c74378359bc362d081/img/Figure_2.png)
 
 #### Class Prediction vs. Ground Truth Table
 
@@ -241,13 +241,13 @@ Here, 3 persons are standing in the image, the model successully predicts that t
 #### Custom Model Precision and Recall over multiple IoU Thresholds
 The figures below shows Precision and Recall for different IoU thresholds. As the model didn't perform much better, so a very low IoU threshold has been used.
 
-![Figure_3](https://github.com/Samar150602/Yolov5_comparison_with_Custom_Object_Detection_Model/blob/db4cd4addca5cf8db43ce87c9f498edece6c5a44/Precision_custom_model.png)
+![Figure_3](https://github.com/EhtishamAshraf/Object_Detection_Models/blob/b89d80f34036d1c1e63338c74378359bc362d081/img/Precision_custom_model.png)
 
-![Figure_4](https://github.com/Samar150602/Yolov5_comparison_with_Custom_Object_Detection_Model/blob/db4cd4addca5cf8db43ce87c9f498edece6c5a44/Recall_custom_model.png)
+![Figure_4](https://github.com/EhtishamAshraf/Object_Detection_Models/blob/b89d80f34036d1c1e63338c74378359bc362d081/img/Recall_custom_model.png)
 
 ### FasterRCNN
 We have also worked on FasterRCNN to detect the objects along with the class predicition. The below image shows the results of FasterRCNN used for object detection.
-![fasterRCNN](https://github.com/Samar150602/Yolov5_comparison_with_Custom_Object_Detection_Model/blob/910aef45173e5cc06f7447b5ed50be22bda12870/Faster_rcnn.png)
+![fasterRCNN](https://github.com/EhtishamAshraf/Object_Detection_Models/blob/b89d80f34036d1c1e63338c74378359bc362d081/img/Faster_rcnn.png)
 
 
 ### How to run
@@ -270,16 +270,3 @@ This python file contains the code for detecting the objects using FasterRCNN.
 ### References
 1. https://docs.ultralytics.com/yolov5/
 2. https://pytorch.org/hub/nvidia_deeplearningexamples_resnet50/
-
-
-
-
-
-
-
-
-
-
-
-
-
